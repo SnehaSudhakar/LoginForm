@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation----------------------- */
+
+nav ul li::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+ul button:hover {
+    color: #fff;
+}
+
+ul button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.home {
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* form box-------------------------------- */
+#formBox {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    width: 400px;
+    height: 480px;
+    font-size: 15px;
+    display: none;
+    transition: 1s;
+}
+
+.close-btn i {
+    cursor: pointer;
+    border-radius: 2px 20px 2px 20px;
+}
+
+/* forms-------------------------- */
+
+#registerForm {
+    transform: translateX(400px);
+}
+
+.input-box {
+    border-bottom: 2px solid black;
+}
+
+.input-box:hover label {
+    transform: translate(-7px, -10px);
+}
+
+.input-box input {
+    outline: none;
+}
+
+.input-box span {
+    line-height: 60px;
+}
+
+.remember input:checked,
+.terms input:checked {
+    background-color: black;
+    color: #fff;
+}
+
+.login a,
+.signup a {
+    text-decoration: none;
+}
+
+.login a:hover,
+.signup a:hover {
+    text-decoration: underline;
+}
+
+
+@media(width<576px) {
+    #formBox {
+        width: 360px;
+        font-size: 13px;
+    }
+}
