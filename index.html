@@ -70,24 +70,6 @@
                 </div>
             </nav>
         </div>
-
-        <!-- <div class="navigation d-flex">
-                <ul class="nav text-center">
-                    <li class="nav-item position-relative list-unstyled mx-lg-4 mx-md-3"><a href="#"
-                            class="text-white text-decoration-none active">Home</a></li>
-                    <li class="nav-item position-relative list-unstyled mx-lg-4 mx-md-3"><a href="#"
-                            class="text-white text-decoration-none">About</a>
-                    </li>
-                    <li class="nav-item position-relative list-unstyled mx-lg-4 mx-md-3"><a href="#"
-                            class="text-white text-decoration-none">Services</a></li>
-                    <li class="nav-item position-relative list-unstyled mx-lg-4 mx-md-3"><a href="#"
-                            class="text-white text-decoration-none">Contact</a>
-                    </li>
-                </ul>
-                <button class="btn btn-outline-light ms-3 px-5" onclick="formShow()">Login</button>
-
-            </div> -->
-        </nav>
     </header>
 
     <!-- Landing page -->
@@ -95,7 +77,7 @@
         <div class="form-box position-relative overflow-hidden" id="formBox">
 
             <!-- Login-form -->
-            <form action="" class="position-absolute  p-5 w-100" id="loginForm" autocomplete="off">
+            <form action="" class="position-absolute  p-5 w-100 h-75" id="loginForm" autocomplete="off">
                 <!-- close button -->
                 <div class="close-btn text-end position-absolute top-0 end-0" onclick="closeBtn()">
                     <i class="fa-solid fa-xmark bg-black text-white p-3"></i>
@@ -132,7 +114,7 @@
             </form>
 
             <!-- Registration -->
-            <form action="" class="position-absolute p-5 w-100" id="registerForm" autocomplete="off">
+            <form action="" class="position-absolute p-5 w-100 h-100" id="registerForm" autocomplete="off">
                 <!-- close button -->
                 <div class="close-btn text-end position-absolute top-0 end-0" onclick="closeBtn()">
                     <i class="fa-solid fa-xmark bg-black text-white p-3"></i>
@@ -185,15 +167,15 @@
         }
         function regShow() {
             Loginform.style.transform = "translateX(-400px)";
+            Loginform.style.transition = "0.5s";
             Registerform.style.transform = "translateX(0px)";
-            Loginform.style.transition = "transform 2s";
-            Registerform.style.transition = "transform 2s";
+            Registerform.style.transition = "0.5ss";
         }
         function loginShow() {
             Loginform.style.transform = "translateX(0px)";
+            Loginform.style.transition = "0.5s";
             Registerform.style.transform = "translateX(400px)";
-            Loginform.style.transition = "transform 2s";
-            Registerform.style.transition = "transform 2s";
+            Registerform.style.transition = "0.5s";
         }
 
         function closeBtn() {
