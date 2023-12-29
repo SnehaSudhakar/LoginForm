@@ -6,7 +6,7 @@
 
 /* Navigation----------------------- */
 
-nav ul li::after {
+.collapse ul li::after {
     content: '';
     width: 100%;
     height: 3px;
@@ -20,20 +20,21 @@ nav ul li::after {
     transition: transform 0.5s;
 }
 
-nav ul li:hover::after {
+.collapse ul li:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
 
-ul button:hover {
+.collapse ul button:hover {
     color: #fff;
 }
 
-ul button:hover {
+.collapse ul button:hover {
     background-color: #fff;
     color: black;
 }
 
+/* homepage */
 .home {
     background-image: url("./images/background.jpg");
     background-repeat: no-repeat;

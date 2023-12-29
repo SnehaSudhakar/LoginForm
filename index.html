@@ -36,11 +36,42 @@
 
 <body class="overflow-hidden">
 
-    <!-- Navigation bar -->
     <header class="fixed-top z-1">
-        <nav class=" d-flex justify-content-between align-items-center p-3 mx-lg-5 mx-md-3">
-            <h3 class="logo fs-2 fw-bolder text-white">Logo</h3>
-            <div class="navigation d-flex">
+        <!-- Navigation bar -->
+        <div class="container">
+            <nav class="navbar navbar-expand-md p-3  mx-md-3">
+                <!-- Logo text-->
+                <a href="#" class="navbar-brand fs-2 fw-bolder text-white">Logo</a>
+                <!-- Toggle button -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navItemList" aria-controls="navItemList" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- Menu icon -->
+                    <span class="navbar-toggler-icon text-white fs-4"><i class="fa-solid fa-bars"></i></span>
+                </button>
+
+                <!-- collapsible navlist -->
+                <div class="collapse navbar-collapse bg-sm-dark rounded-sm-1" id="navItemList">
+                    <ul class="navbar-nav text-center ms-md-auto ">
+                        <li class="nav-link position-relative list-unstyled mx-md-3"><a href="#"
+                                class="text-white text-decoration-none active">Home</a></li>
+                        <li class="nav-link position-relative list-unstyled  mx-md-3"><a href="#"
+                                class="text-white text-decoration-none">About</a>
+                        </li>
+                        <li class="nav-link position-relative list-unstyled mx-md-3"><a href="#"
+                                class="text-white text-decoration-none">Services</a></li>
+                        <li class="nav-link position-relative list-unstyled mx-md-3"><a href="#"
+                                class="text-white text-decoration-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logStartBtn text-center w-sm-100 mx-auto ">
+                    <button class="btn btn-outline-light px-5" onclick="formShow()">Login</button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- <div class="navigation d-flex">
                 <ul class="nav text-center">
                     <li class="nav-item position-relative list-unstyled mx-lg-4 mx-md-3"><a href="#"
                             class="text-white text-decoration-none active">Home</a></li>
@@ -55,7 +86,7 @@
                 </ul>
                 <button class="btn btn-outline-light ms-3 px-5" onclick="formShow()">Login</button>
 
-            </div>
+            </div> -->
         </nav>
     </header>
 
